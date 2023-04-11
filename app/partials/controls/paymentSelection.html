@@ -1,5 +1,5 @@
 <div>
-    <span class="btn-group">
+    <span class="btn-group" style="display:none;">
         <button class="btn btn-default" type="button"
                 ng-show="user.Permissions.contains('PayByPO')"
                 ng-click="currentOrder.PaymentMethod = 'PurchaseOrder'">
@@ -24,11 +24,6 @@
                 ng-click="currentOrder.PaymentMethod = 'CreditCard'">
             <i ng-class="{'fa fa-check': currentOrder.PaymentMethod == 'CreditCard' }"></i>
             {{'Credit Card' | r | xlat}}
-        </button>
-        <button class="btn btn-info pull-right" type="button"
-                ng-hide="(billaddressform || (!addressform && (addresses | filter:{IsBilling:true}).length == 0) || !user.Permissions.contains('CreateBillToAddress'))"
-                ng-click="billaddressform = true">
-            {{('New' | r) + ' ' +  ('Address' | r) | xlat}}
         </button>
     </span>
     <div class="view-form-icon" ng-if="user.Permissions.contains('PayByBudgetAccount')" ng-show="currentOrder.PaymentMethod == 'BudgetAccount'">
