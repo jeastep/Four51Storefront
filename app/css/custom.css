@@ -1,6 +1,116 @@
-/*
-Static file for Theme changes
-Theme name: My SPA Theme
-Version: 1.0
-Template: Howdy
-*/
+.product-image-large {
+    border: 1px solid grey;
+}
+
+.main-wrapper {
+  background-color:#FFFFFF;
+  max-width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+  
+.jumbotron {
+  margin:0px;
+  background-color: transparent;
+}
+
+textarea.form-control {
+    height: 280px;
+}
+
+.my-imgs {
+    display:inline-block;
+    float:none;
+    width:100%;
+    padding:10px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.container-view { 
+    margin-top: 5px;
+}
+
+.dropdown-mega {
+    display:none;
+}
+
+@media only screen and (max-width: 400px) {
+    .container-view {
+    max-width: 90%;
+    margin: 4.5rem auto 0 auto;
+}
+}
+
+.navbar-fixed-top {
+    max-width: 60%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+    .navbar-fixed-top {
+    max-width: 100%;
+    margin: auto;
+}
+}
+
+.container {
+    width: auto;
+    float: none;
+    margin: 0 auto;
+    display: block;
+}
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.panel {
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+}
+
+.panel-default {
+    border-color: #fff;
+}
+
+.panel-primary {
+    border-color: #fff;
+}
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+.badge {
+    color: #000;
+}
+
+.thumbnail img {
+    max-height: 175px;
+    border:1px solid gray;
+}
+
+div.panel-heading > h3, div.panel-heading > h2 {
+    color:white;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Droid Sans", sans-serif
+    font-size: 11px;
+}
+
+.panel-product-list ul li.inline h3 {
+    min-height:15px;
+}
