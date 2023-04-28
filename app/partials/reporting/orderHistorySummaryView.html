@@ -1,4 +1,9 @@
 <div>
+     <p ng-repeat="field in order.OrderFields">
+        <span class="text-info">{{field.Label}}</span>
+        <span class="pull-right">{{field.Value}}</span>
+    </p>
+
     <p>
         <span class="text-info">{{'Subtotal' | r | xlat}}</span>
         <span class="pull-right">{{order.Subtotal | culturecurrency}}</span>
