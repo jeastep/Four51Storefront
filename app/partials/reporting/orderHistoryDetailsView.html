@@ -1,4 +1,9 @@
 <div>
+ <p ng-repeat="field in order.OrderFields">
+        <span class="text-info">{{field.Label}}</span>
+        <span class="pull-right">{{field.Value}}</span>
+    </p>
+
     <p ng-show="order.DateSubmitted">
         <span class="text-info">{{('Date' | r) + ' ' + ('Submitted' | r) | xlat}}</span>
         <span class="pull-right">{{order.DateSubmitted | date:user.Culture.DateFormat.short}}</span>
